@@ -7,24 +7,49 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
     }
-    
+    ul {
+      padding: 0;
+    }
+    ul li {
+      display: inline;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: gray;
+      padding: 1em;
+      padding-left: 0;
+    }
+    .title {
+      background-color: aqua;
+      padding: 0.2em;
+      padding-left: 1em;
+    }
+    .nav-item {
+      color: aqua;
+      text-decoration: none;
+      border-bottom: 2px aqua solid;
+      font-size: 22px;
+      padding: 4px;
+      margin: 2px;
+    }
   </style>
 </head>
 <body>
-  <header>
+  <nav>
     <h1 class="title">Rachel Esteve</h1>
-    <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
-    </nav>
-    <div id="header-image">
-      <h2>Cool subtitle!</h2>
-    </div>
+    <ul>
+      <li><a class="nav-item" href="#about-me">About Me</a></li>
+      <li><a class="nav-item" href="#work">Work</a></li>
+      <li><a class="nav-item" href="#contact-me">Contact Me</a></li>
+      <li><a class="nav-item" href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h2>Cool subtitle!</h2>
   </header> 
   <main>
     <section>
