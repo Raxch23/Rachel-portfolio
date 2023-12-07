@@ -44,16 +44,70 @@
       align-items: end;
       padding-right: 40px;
       background-image: url(../Rachel-portfolio/assets/images/bg.jpg);
-      display:flex
-      height 200px
-      margin-bottom 0px
-      margin-left 0px
-      margin-right 0px
-      margin-top 0px
-      width 200px
+      background-size: cover;
+      display:flex;
+      /* height: 200px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      width: 200px; */
+    }
+    .project {
+      position: relative;
+      height: 100px;
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
-   
+    .project:first-of-type {
+      width: 100% !important;
+      height: 200px !important;
+    }
+
+    .project img {
+      width: 100%;
+    }
+
+    .project .project-title {
+      position: absolute;
+      height: fit-content;
+      bottom: 0;
+      padding: 10px;
+      background-color: aqua;
+    }
+    .project .project-title h3, 
+    .project .project-title p {
+      margin: 0;
+    }
+    .project .project-image {
+      position: absolute;
+      height: 100%;
+      overflow: hidden;
+      border: 4px solid aqua;
+    }
+    section {
+      display: flex;
+      width: 90%;
+      margin: 20px auto;
+    }
+    section .section-title {
+      width: 30%;
+      text-align: right;
+      padding: 0 20px;
+      border-right: solid 6px blue;
+      display: flex;
+      justify-content: end;
+      align-items: start;  
+    }
+    section .section-content {
+      padding: 0 20px;
+      width: 70%;
+    }
+    /* #work .section-content {
+      display: flex;
+    } */
   </style>
 </head>
 <body>
@@ -71,46 +125,92 @@
   </header> 
   <main>
     <section>
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis ab praesentium molestias consectetur minima doloremque nihil illo numquam maiores eos similique qui fuga perferendis saepe sint laborum, mollitia veritatis.</p>
-    </section>
-    <section>
-      <h2>Work</h2>
-      <div class="work">
-        <h3>Surf Report</h3>
-        <p>mERN Stack</p>
-        <img src="./assets/images/surf report.jpg" alt="image of the ocean with a man laying on surfboard">
+      <div class="section-title">
+        <h2>About Me</h2>
       </div>
-      <div class="work">
-        <h3>LED Wall</h3>
-        <p>Node IoT</p>
-        <img src="./assets/images/ledwall.jpg" alt="led wall with multiple rainbow color">
-      </div>
-      <div class="work">
-        <h3>calculator</h3>
-        <p>React/JavaScript/CSS</p>
-        <img src="./assets/images/calculator.jpg" alt="calcuator image showing on laptop with coding">
-      </div>
-      <div class="work">
-        <h3>Pastel Puzzels</h3>
-        <p>mERN Stack</p>
-        <img src="./assets/images/pastel puzzels.jpg" alt=" a plain pastel colour ">
-      </div>
-      <div class="work">
-        <h3>Run Buddy</h3>
-        <p>HTML/CSS/p>
-          <img src="./assets/images/run buddy.jpg" alt="an image of a website with yellow background and with a get started pop window with a form to fill out">
+      <div class="section-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis ab praesentium molestias consectetur minima doloremque nihil illo numquam maiores eos similique qui fuga perferendis saepe sint laborum, mollitia veritatis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla alias placeat maiores laboriosam et quos obcaecati iusto? Nostrum voluptate, molestias quia inventore quos, cumque aut molestiae nulla at, provident aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, iste necessitatibus magni pariatur odio eum hic ut blanditiis voluptate corrupti reiciendis sit nisi? Explicabo cum, consectetur libero dicta architecto aspernatur.</p>
       </div>
     </section>
+    <section id="work">
+      <div class="section-title">
+        <h2>Work</h2>
+      </div>
+      <div class="section-content">
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/images/surf report.jpg" alt="image of the ocean with a man laying on surfboard">
+          </div>
+          <div class="project-title">
+            <h3>Surf Report</h3>
+            <p>mERN Stack</p>
+          </div>  
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/images/ledwall.jpg" alt="led wall with multiple rainbow color">
+          </div>
+          <div class="project-title">
+            <h3>LED Wall</h3>
+            <p>Node IoT</p>
+
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/images/calculator.jpg" alt="calcuator image showing on laptop with coding">
+            
+          </div>
+          <div class="project-title">
+            <h3>calculator</h3>
+            <p>React/JavaScript/CSS</p>
+
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/images/pastel puzzels.jpg" alt=" a plain pastel colour ">
+            
+          </div>
+          <div class="project-title">
+            <h3>Pastel Puzzels</h3>
+            <p>mERN Stack</p>
+
+          </div>
+      
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/images/run buddy.jpg" alt="an image of a website with yellow background and with a get started pop window with a form to fill out">
+            
+          </div>
+          <div class="project-title">
+            <h3>Run Buddy</h3>
+            <p>HTML/CSS</p>
+
+          </div>
+        
+          
+        </div>
+      </div>
+    </section>
     <section>
-      <h2>Contact Me</h2>
-      <ul>
-        <li><a href="#">555.555.5555</a></li>
-        <li><a href="#">email@email.com</a></li>
-        <li><a href="" target="_blank">GitHub</a></li>
-        <li><a href="" target="_blank">Twitter</a></li>
-        <li><a href="" target="_blank">Spotify</a></li>
-      </ul>
+      <div class="section-title">
+        <h2>Contact Me</h2>
+
+      </div>
+      <div class="section-content">
+        <ul>
+          <li><a href="#">555.555.5555</a></li>
+          <li><a href="#">email@email.com</a></li>
+          <li><a href="" target="_blank">GitHub</a></li>
+          <li><a href="" target="_blank">Twitter</a></li>
+          <li><a href="" target="_blank">Spotify</a></li>
+        </ul>
+
+      </div>
     </section>
   </main>
   <footer></footer>
