@@ -104,8 +104,9 @@ section .section-title {
   padding: 0 20px;
   border-right: solid 6px blue;
   display: flex;
-  justify-content: end;
-  align-items: start;  
+  flex-direction: column;
+  justify-content: strat;
+  align-items: end;  
 }
 section .section-content {
   padding: 0 20px;
@@ -125,4 +126,10 @@ section .section-content {
 
 .icon {
   height: 20px;
+}
+
+#self {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
 }
