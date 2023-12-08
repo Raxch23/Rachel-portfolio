@@ -39,12 +39,6 @@ header {
   background-image: url(../images/bg.jpg);
   background-size: cover;
   display:flex;
-  /* height: 200px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  width: 200px; */
 }
 
 header h2 {
@@ -102,7 +96,7 @@ section .section-title {
   width: 30%;
   text-align: right;
   padding: 0 20px;
-  border-right: solid 6px blue;
+  border-right: solid 6px black;
   display: flex;
   flex-direction: column;
   justify-content: strat;
@@ -112,9 +106,6 @@ section .section-content {
   padding: 0 20px;
   width: 70%;
 }
-/* #work .section-content {
-  display: flex;
-} */
 
 #contact-me ul li a {
   text-decoration:  none;
