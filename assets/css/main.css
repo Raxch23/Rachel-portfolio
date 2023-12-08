@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  display: inline;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  padding: 1em;
+  padding-left: 0;
+}
+.title {
+  background-color: aqua;
+  padding: 0.2em;
+  padding-left: 1em;
+}
+.nav-item {
+  color: aqua;
+  text-decoration: none;
+  border-bottom: 2px aqua solid;
+  font-size: 22px;
+  padding: 4px;
+  margin: 2px;
+}
+header {
+  height: 220px;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 40px;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  display:flex;
+  /* height: 200px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 200px; */
+}
+.project {
+  position: relative;
+  height: 100px;
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.project.first {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+.project img {
+  width: 100%;
+  transform: translateY(-25%);
+}
+
+.project .project-title {
+  position: absolute;
+  height: fit-content;
+  bottom: 0;
+  padding: 10px;
+  background-color: aqua;
+}
+.project .project-title h3, 
+.project .project-title p {
+  margin: 0;
+}
+.project .project-image {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  border: 4px solid aqua;
+}
+section {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+}
+section .section-title {
+  width: 30%;
+  text-align: right;
+  padding: 0 20px;
+  border-right: solid 6px blue;
+  display: flex;
+  justify-content: end;
+  align-items: start;  
+}
+section .section-content {
+  padding: 0 20px;
+  width: 70%;
+}
+/* #work .section-content {
+  display: flex;
+} */
