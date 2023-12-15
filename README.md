@@ -12,4 +12,4 @@ We were task with creating a portfolio. This is my first attempt at creating my 
   ![Screenshot 2023-12-08 at 9 10 38 pm](https://github.com/Raxch23/Rachel-portfolio/assets/148925012/3411c2a2-731a-40f2-8708-8a56ae688c14)
 
  ## Installation
-- deployed link of my webpage :
+- Deployed link of my webpage : https://raxch23.github.io/Rachel-portfolio/
